@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    height: 335vh;
+    background-image: url(https://4kwallpapers.com/images/wallpapers/mortal-kombat-2021-movies-black-background-amoled-5k-8k-8500x4800-4717.jpg);
+    background-size: contain;
+}
+
+.text1,
+.text2,
+.text3 {
+    color: white;
+    text-align: center;
+    font-size: 4.5em;
+    letter-spacing: 0.05em;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.text2,
+.text3 {
+    display: none;
+}
+
+.about,
+.about1 {
+    font-size: small;
+    font-family: 'Bungee Spice', cursive;
+    display: none;
+    color: white;
+}
+
+.t1 {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.t2 {
+    margin-left: 130vh;
+    position: absolute;
+    margin-top: 3vh;
+}
+
+.t3 {
+    margin-top: 3vh;
+    margin-left: 70vh;
+    position: absolute;
+}
+
+.heroes,
+.choose-enemy {
+    display: flex;
+    justify-content: space-around;
+}
+
+.enemy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 250px;
+    height: 450px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.scorpion {
+    background-image: url(./images/scorpion.png);
+    transition: 1s all;
+}
+
+.subzero {
+    transition: 1s all;
+}
+
+.sonyablade {
+    background-image: url(./images/sonyablade.png);
+    transition: 1s all;
+}
+
+.luikang {
+    transition: 1s all;
+}
+
+.scorpion:hover,
+.subzero:hover,
+.sonyablade:hover,
+.luikang:hover {
+    transform: scale(1.1);
+}
+
+.fight {
+    cursor: pointer;
+    margin-top: 4vh;
+    background-color: white;
+    color: coral;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 103vh;
+    width: 160px;
+    height: 60px;
+    transition: 0.5s all;
+    box-shadow: 1px solid chocolate;
+    display: none;
+}
+
+.fight:hover {
+    background-color: coral;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* WAR HISSE */
+
+.area {
+    transition: 1s all;
+    display: none;
+    background-image: url(https://i.pinimg.com/originals/3a/5e/d0/3a5ed058b2aab108e8b81c39b7da9e5e.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.linebar {
+    margin-top: 85vh;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.line1,.line2,.line3,.line4 {
+    height: 3vh;
+    width: 200px;
+}
+
+.line1,.line3 {
+    background-color: red;
+}
+
+.line2,.line4 {
+    background-color: green;
+}
+
+.war {
+    position: absolute;
+    margin-top: 35vh;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.gif {
+    width: 50%;
+    height: 30vh;
+    margin-top: 5vh;
+    display: none;
+    position: relative;
+}
+
+.gifff {
+    position: absolute;
+    height: auto;
+    animation: moveImage 3s linear infinite;
+}
+
+@keyframes moveImage {
+    from { left: 0; } /* Başlangıç konumu */
+    to { left: 100%; } /* Bitiş konumu */
+}
+
+.bout {
+    height: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sol,
+.sag {
+    margin-top: 25vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    height: 2vh;
+    font-family: 'Bungee Spice', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.beat {
+    border-radius: 60px;
+    font-size: x-large;
+    cursor: pointer;
+    margin-top: 23vh;
+    transition: 0.5s all;
+    background-color: white;
+    color: orange;
+    height: 6vh;
+    width: 15vh;
+}
+
+.beat:hover {
+    transform: scale(1.2);
+    background-color: orange;
+    color: white;
+}
+
+.name11,
+.name22 {
+    font-size: 1.8em;
+}
